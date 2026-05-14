@@ -29,7 +29,9 @@ export default function AppLayout({ children }) {
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
-                    <span className="topbar-brand">🫘 UMKM Tempe</span>
+                    <span className="topbar-brand flex items-center gap-2">
+                        <img src="/logo.png" alt="Logo" style={{ width: '24px', height: '24px', objectFit: 'contain' }} /> UMKM Tempe
+                    </span>
                 </div>
 
                 <div className="page">
@@ -49,7 +51,9 @@ function SidebarContent() {
     return (
         <>
             <div className="sb-brand">
-                <div className="sb-icon">🫘</div>
+                <div className="sb-icon" style={{ background: 'transparent' }}>
+                    <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                </div>
                 <div>
                     <div className="sb-name">UMKM Tempe</div>
                     <div className="sb-sub">{auth?.user?.name || 'Guest'}</div>
