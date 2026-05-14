@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>@yield('title','Dashboard') — UMKM Tempe</title>
+<title>@yield('title','Dashboard') — Pabrik Tempe Pak Iwan</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -132,7 +132,7 @@ tbody tr:last-child td{border-bottom:none}
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
-      <span class="topbar-brand">🫘 UMKM Tempe</span>
+      <span class="topbar-brand" style="display:flex;align-items:center;gap:8px;"><img src="/logo.png" alt="Logo" style="width:24px;height:24px;object-fit:cover;border-radius:4px;"> Pabrik Tempe Pak Iwan</span>
     </div>
 
     <div class="page">

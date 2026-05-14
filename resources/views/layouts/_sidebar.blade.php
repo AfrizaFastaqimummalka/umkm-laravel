@@ -1,6 +1,8 @@
 <div class="sb-brand">
-  <div class="sb-icon">🫘</div>
-  <div><div class="sb-name">UMKM Tempe</div><div class="sb-sub">Admin UMKM Tempe</div></div>
+  <div class="sb-icon" style="background:transparent;overflow:hidden;">
+    <img src="/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:cover;">
+  </div>
+  <div><div class="sb-name">Pabrik Tempe<br>Pak Iwan</div><div class="sb-sub">Admin</div></div>
 </div>
 <div class="sb-div"></div>
 <nav class="sb-nav">

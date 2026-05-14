@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Login — UMKM Tempe</title>
+<title>Login — Pabrik Tempe Pak Iwan</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--green-50:#E8F8F2;--green-500:#1D9E75;--green-600:#0F6E56;--gray-100:#F3F4F6;--gray-300:#D1D5DB;--gray-500:#6B7280;--gray-700:#374151;--gray-900:#111827;--red-50:#FEF2F2;--red-500:#EF4444;--red-600:#DC2626;--font:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}
@@ -39,8 +39,10 @@ body{font-family:var(--font);background:linear-gradient(135deg,var(--green-50) 0
 <body>
 <div class="left">
   <div class="lc">
-    <div class="lc-emoji">🫘</div>
-    <h1 class="lc-title">UMKM Tempe<br>Manajemen Keuangan</h1>
+    <div class="lc-emoji" style="background:transparent;width:64px;height:64px;margin-bottom:20px;border-radius:12px;overflow:hidden;">
+      <img src="/logo.png" alt="Logo" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <h1 class="lc-title">Pabrik Tempe Pak Iwan<br>Manajemen Keuangan</h1>
     <p class="lc-desc">Kelola pemasukan, pengeluaran, dan laporan keuangan usaha tempe Anda dengan mudah dan terstruktur.</p>
     <div class="features">
       @foreach(['Laporan harian, bulanan & tahunan','Export Excel otomatis','Rekap via Telegram Bot','Data pelanggan terorganisir'] as $f)
@@ -74,7 +76,7 @@ body{font-family:var(--font);background:linear-gradient(135deg,var(--green-50) 0
         <button type="submit" class="sub">Masuk</button>
       </form>
     </div>
-    <p class="foot">Sistem Manajemen Keuangan UMKM Tempe © {{ date('Y') }}</p>
+    <p class="foot">Sistem Manajemen Keuangan Pabrik Tempe Pak Iwan © {{ date('Y') }}</p>
   </div>
 </div>
 </body>

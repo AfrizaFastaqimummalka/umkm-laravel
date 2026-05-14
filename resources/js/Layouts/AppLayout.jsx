@@ -30,7 +30,7 @@ export default function AppLayout({ children }) {
                         </svg>
                     </button>
                     <span className="topbar-brand flex items-center gap-2">
-                        <img src="/logo.png" alt="Logo" style={{ width: '24px', height: '24px', objectFit: 'contain' }} /> UMKM Tempe
+                        <img src="/logo.png" alt="Logo" style={{ width: '24px', height: '24px', objectFit: 'cover', borderRadius: '4px' }} /> Pabrik Tempe Pak Iwan
                     </span>
                 </div>
 
@@ -51,11 +51,11 @@ function SidebarContent() {
     return (
         <>
             <div className="sb-brand">
-                <div className="sb-icon" style={{ background: 'transparent' }}>
-                    <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                <div className="sb-icon" style={{ background: 'transparent', overflow: 'hidden' }}>
+                    <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div>
-                    <div className="sb-name">UMKM Tempe</div>
+                    <div className="sb-name">Pabrik Tempe<br/>Pak Iwan</div>
                     <div className="sb-sub">{auth?.user?.name || 'Guest'}</div>
                 </div>
             </div>

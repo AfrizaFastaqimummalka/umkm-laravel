@@ -69,7 +69,7 @@ class TelegramService
         );
 
         if (!$this->isAllowed($chatId)) {
-            $this->send($chatId, '⛔ Akses ditolak. Bot ini hanya untuk admin UMKM Tempe.');
+            $this->send($chatId, '⛔ Akses ditolak. Bot ini hanya untuk admin Pabrik Tempe Pak Iwan.');
             return;
         }
 
@@ -92,7 +92,7 @@ class TelegramService
     private function cmdStart(int|string $chatId): void
     {
         $this->send($chatId,
-            "👋 *Halo! Bot UMKM Tempe aktif.*\n\n"
+            "👋 *Halo! Bot Pabrik Tempe Pak Iwan aktif.*\n\n"
             . "📊 `/rekap` — Rekap bulan ini\n"
             . "📊 `/rekap harian` — Rekap hari ini\n"
             . "📊 `/rekap bulanan` — Rekap bulan ini\n"
@@ -120,7 +120,7 @@ class TelegramService
             $icon   = $saldo >= 0 ? '✅' : '⚠️';
 
             $caption =
-                "📊 *REKAP KEUANGAN UMKM TEMPE*\n"
+                "📊 *REKAP KEUANGAN PABRIK TEMPE PAK IWAN*\n"
                 ."📅 Periode: *{$label}*\n"
                 .str_repeat('─',28)."\n\n"
                 ."💰 *Total Pemasukan*\n"

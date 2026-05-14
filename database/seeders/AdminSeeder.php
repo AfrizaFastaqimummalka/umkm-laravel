@@ -11,7 +11,7 @@ class AdminSeeder extends Seeder
         User::updateOrCreate(
             ['username' => 'admin'],
             [
-                'name'     => 'Admin UMKM Tempe',
+                'name'     => 'Admin Pabrik Tempe Pak Iwan',
                 'email'    => 'admin@umkm-tempe.com',
                 'username' => 'admin',
                 'password' => Hash::make('admin123'),
